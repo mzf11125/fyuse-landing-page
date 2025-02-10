@@ -11,7 +11,7 @@ import {
 
 export default function LandingPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex mx-auto flex-col min-h-screen">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
           <Tshirt className="h-6 w-6" />
@@ -39,9 +39,9 @@ export default function LandingPage() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+        <section className="w-full py-12 md:py-24 mx-auto lg:py-32 xl:py-48 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid gap-6 mx-auto lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4 text-white">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
@@ -71,7 +71,7 @@ export default function LandingPage() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/capture.ico"
+                  src="/logo.jfif"
                   alt="Pratinjau Aplikasi Fyuse"
                   width={300}
                   height={300}
@@ -85,7 +85,7 @@ export default function LandingPage() {
           id="fitur"
           className="w-full py-12 md:py-24 lg:py-32 bg-gray-100"
         >
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
               Fitur Utama
             </h2>
@@ -119,8 +119,11 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section id="cara-kerja" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+        <section
+          id="cara-kerja"
+          className="w-full mx-auto py-12 md:py-24 lg:py-32"
+        >
+          <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
               Cara Kerja
             </h2>
@@ -166,7 +169,7 @@ export default function LandingPage() {
           id="unduh"
           className="w-full py-12 md:py-24 lg:py-32 bg-red-600 text-white"
         >
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Siap Menemukan Gaya Anda?
@@ -195,7 +198,7 @@ export default function LandingPage() {
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
               Kenapa Fyuse?
             </h2>
