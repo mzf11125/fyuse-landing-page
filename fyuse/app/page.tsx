@@ -71,7 +71,7 @@ export default function LandingPage() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/logo.jfif"
+                  src="/capture.ico"
                   alt="Pratinjau Aplikasi Fyuse"
                   width={300}
                   height={300}
