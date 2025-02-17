@@ -50,30 +50,30 @@ export default function LandingPage() {
                     Temukan Gaya Sempurna Anda
                   </h1>
                   <p className="max-w-[600px] text-gray-100 md:text-xl">
-                    Fyuse merekomendasikan fashion yang sesuai dengan bentuk
-                    tubuh dan gaya Anda, terintegrasi dengan Shopee untuk
-                    belanja yang mudah.
+                    FYUSE memungkinkan Anda mencoba baju secara virtual sebelum
+                    membelinya, sehingga belanja jadi lebih mudah dan
+                    menyenangkan!
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link href="#unduh">
-                    <Button className="bg-white text-blue-600 hover:bg-gray-100">
-                      Kunjungi website
-                    </Button>
-                  </Link>
-                  <Link href="#cara-kerja">
+                  <form className="flex flex-col gap-2 md:flex-row">
+                    <Input
+                      placeholder="Masukkan email Anda"
+                      type="email"
+                      className="flex-1 bg-white text-gray-900"
+                    />
                     <Button
-                      variant="outline"
-                      className="border-white text-white hover:bg-white hover:text-blue-600"
+                      type="submit"
+                      className="bg-white text-blue-600 hover:bg-gray-100"
                     >
-                      Pelajari Lebih Lanjut
+                      Join Waitlist
                     </Button>
-                  </Link>
+                  </form>
                 </div>
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/capture.ico"
+                  src="/logo.ico"
                   alt="Pratinjau Aplikasi Fyuse"
                   width={300}
                   height={300}
