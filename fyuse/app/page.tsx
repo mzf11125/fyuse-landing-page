@@ -39,15 +39,17 @@ export default function LandingPage() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 mx-auto lg:py-32 xl:py-48 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500">
-          <div className="container mx-auto px-4 md:px-6">
+        <section className="w-full py-12 md:py-24 mx-auto lg:py-32 xl:py-48 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 animate-gradient" />
+          <div className="absolute inset-0 opacity-50 bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,.2)_50%,transparent_75%,transparent_100%)] bg-size-200 animate-shimmer" />
+          <div className="container relative mx-auto px-4 md:px-6">
             <div className="grid gap-6 mx-auto lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4 text-white">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     Temukan Gaya Sempurna Anda
                   </h1>
-                  <p className="max-w-[600px] text-gray-200 md:text-xl">
+                  <p className="max-w-[600px] text-gray-100 md:text-xl">
                     Fyuse merekomendasikan fashion yang sesuai dengan bentuk
                     tubuh dan gaya Anda, terintegrasi dengan Shopee untuk
                     belanja yang mudah.
@@ -55,14 +57,14 @@ export default function LandingPage() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link href="#unduh">
-                    <Button className="bg-white text-red-600 hover:bg-gray-100">
-                      Unduh Aplikasi
+                    <Button className="bg-white text-blue-600 hover:bg-gray-100">
+                      Kunjungi website
                     </Button>
                   </Link>
                   <Link href="#cara-kerja">
                     <Button
                       variant="outline"
-                      className="border-white text-red-400 hover:bg-white hover:text-red-600"
+                      className="border-white text-white hover:bg-white hover:text-blue-600"
                     >
                       Pelajari Lebih Lanjut
                     </Button>
@@ -91,7 +93,7 @@ export default function LandingPage() {
             </h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <div className="flex flex-col items-center text-center">
-                <Ruler className="h-12 w-12 mb-4 text-red-600" />
+                <Ruler className="h-12 w-12 mb-4 text-blue-600" />
                 <h3 className="text-xl font-bold mb-2">
                   Analisis Ukuran Tubuh
                 </h3>
@@ -101,7 +103,7 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <ThumbsUp className="h-12 w-12 mb-4 text-red-600" />
+                <ThumbsUp className="h-12 w-12 mb-4 text-blue-600" />
                 <h3 className="text-xl font-bold mb-2">Preferensi Gaya</h3>
                 <p className="text-gray-600">
                   Beritahu kami apa yang Anda suka, dan kami akan menemukan
@@ -109,7 +111,7 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <ShoppingBag className="h-12 w-12 mb-4 text-red-600" />
+                <ShoppingBag className="h-12 w-12 mb-4 text-blue-600" />
                 <h3 className="text-xl font-bold mb-2">Integrasi Shopee</h3>
                 <p className="text-gray-600">
                   Belanja gaya yang direkomendasikan langsung di Shopee dengan
@@ -131,8 +133,8 @@ export default function LandingPage() {
               {[
                 {
                   step: 1,
-                  title: "Unduh Aplikasi",
-                  description: "Dapatkan Fyuse dari toko aplikasi Anda",
+                  title: "Kunjungi Website",
+                  description: "Kunjungi website Fyuse dari browser Anda",
                 },
                 {
                   step: 2,
@@ -155,7 +157,7 @@ export default function LandingPage() {
                   key={item.step}
                   className="flex flex-col items-center text-center"
                 >
-                  <div className="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center text-xl font-bold mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white flex items-center justify-center text-xl font-bold mb-4">
                     {item.step}
                   </div>
                   <h3 className="text-xl font-bold mb-2">{item.title}</h3>
@@ -167,15 +169,16 @@ export default function LandingPage() {
         </section>
         <section
           id="unduh"
-          className="w-full py-12 md:py-24 lg:py-32 bg-red-600 text-white"
+          className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-600 to-purple-600 text-white relative overflow-hidden"
         >
-          <div className="container mx-auto px-4 md:px-6">
+          <div className="absolute inset-0 opacity-50 bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,.2)_50%,transparent_75%,transparent_100%)] bg-size-200 animate-shimmer" />
+          <div className="container relative mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Siap Menemukan Gaya Anda?
               </h2>
               <p className="max-w-[600px] text-gray-200 md:text-xl">
-                Unduh Fyuse sekarang dan mulai temukan fashion yang sempurna
+                Kunjungi Fyuse sekarang dan mulai temukan fashion yang sempurna
                 untuk Anda.
               </p>
               <div className="w-full max-w-sm space-y-2">
@@ -185,7 +188,7 @@ export default function LandingPage() {
                     placeholder="Masukkan email Anda"
                     type="email"
                   />
-                  <Button className="bg-white text-red-600 hover:bg-gray-100">
+                  <Button className="bg-white text-blue-600 hover:bg-gray-100">
                     Dapatkan Link
                   </Button>
                 </form>

@@ -21,11 +21,11 @@ const config: Config = {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
+  				DEFAULT: 'hsl(221.2 83.2% 53.3%)', // Blue-600
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
+  				DEFAULT: 'hsl(262.1 83.3% 57.8%)', // Purple-600
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
   			muted: {
