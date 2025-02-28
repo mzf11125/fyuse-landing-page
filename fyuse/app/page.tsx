@@ -47,12 +47,10 @@ export default function LandingPage() {
               <div className="flex flex-col justify-center space-y-4 text-white">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Temukan Gaya Sempurna Anda
+                    For You Style!
                   </h1>
                   <p className="max-w-[600px] text-gray-100 md:text-xl">
-                    FYUSE memungkinkan Anda mencoba baju secara virtual sebelum
-                    membelinya, sehingga belanja jadi lebih mudah dan
-                    menyenangkan!
+                    Dapatkan rekomendasi gaya yang dipersonalisasi dan rasakan pengalaman ruang ganti digital yang belum pernah ada sebelumnya.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -95,19 +93,17 @@ export default function LandingPage() {
               <div className="flex flex-col items-center text-center">
                 <Ruler className="h-12 w-12 mb-4 text-blue-600" />
                 <h3 className="text-xl font-bold mb-2">
-                  Analisis Ukuran Tubuh
+                  Rekomendasi Gaya yang Dipersonalisasi
                 </h3>
                 <p className="text-gray-600">
-                  Dapatkan rekomendasi akurat berdasarkan ukuran tubuh unik
-                  Anda.
+                  FYUSE memahami gayamu! Dapatkan rekomendasi outfit yang disesuaikan dengan preferensi dan bentuk tubuhmu. Tidak perlu lagi bingung memilih pakaian yang tepat!
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <ThumbsUp className="h-12 w-12 mb-4 text-blue-600" />
-                <h3 className="text-xl font-bold mb-2">Preferensi Gaya</h3>
+                <h3 className="text-xl font-bold mb-2">Pengalaman Ruang Ganti Digital</h3>
                 <p className="text-gray-600">
-                  Beritahu kami apa yang Anda suka, dan kami akan menemukan
-                  pakaian yang sesuai dengan selera Anda.
+                  Rasakan sensasi mencoba pakaian secara langsung dengan teknologi virtual try-on terdepan. Lihat bagaimana pakaian itu pas di tubuhmu dari berbagai sudut, seolah-olah kamu sedang bercermin di ruang ganti sungguhan!
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
@@ -129,28 +125,32 @@ export default function LandingPage() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
               Cara Kerja
             </h2>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
               {[
                 {
                   step: 1,
-                  title: "Kunjungi Website",
-                  description: "Kunjungi website Fyuse dari browser Anda",
+                  title: "Pindai Bentuk Tubuhmu",
+                  description: "Mulai petualangan gayamu dengan memindai tubuhmu menggunakan kamera smartphone. FYUSE akan menciptakan model 3D yang akurat, lengkap dengan ukuran tubuhmu yang sesungguhnya. Ini adalah langkah awal untuk pengalaman virtual try-on yang realistis",
                 },
                 {
                   step: 2,
-                  title: "Masukkan Ukuran",
-                  description: "Masukkan ukuran tubuh Anda dengan akurat",
+                  title: "Masukkan Preferensi Gayamu",
+                  description: "Ceritakan tentang gayamu! Pilih warna favoritmu, gaya busana yang kamu sukai, dan informasi tambahan lainnya. FYUSE akan menggunakan data ini untuk memberikan rekomendasi yang benar-benar personal",
                 },
                 {
                   step: 3,
-                  title: "Atur Preferensi",
-                  description: "Beritahu kami tentang preferensi gaya Anda",
+                  title: "Dapatkan Rekomendasi Gaya",
+                  description: "FYUSE akan menganalisis preferensi dan bentuk tubuhmu, lalu memberikan rekomendasi gaya yang paling sesuai. Temukan outfit yang sempurna untukmu, tanpa perlu repot mencari!",
                 },
                 {
                   step: 4,
-                  title: "Belanja di Shopee",
-                  description:
-                    "Jelajahi dan beli item yang direkomendasikan di Shopee",
+                  title: "Coba Secara Virtual",
+                  description: "Pilih produk yang kamu suka dan lihat bagaimana produk tersebut terlihat di tubuhmu secara virtual. FYUSE memberikan pengalaman virtual try-on yang realistis, seolah-olah kamu sedang bercermin di ruang ganti sungguhan",
+                },
+                {
+                  step: 5,
+                  title: "Pesan Sekarang",
+                  description: "Setelah menemukan outfit yang sempurna, kamu bisa langsung memesannya melalui aplikasi FYUSE. Belanja online jadi lebih mudah, cepat, dan menyenangkan!",
                 },
               ].map((item) => (
                 <div
@@ -208,25 +208,24 @@ export default function LandingPage() {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <div className="flex flex-col items-center text-center">
                 <h3 className="text-xl font-bold mb-2">
-                  Cocok untuk Orang Indonesia
+                  Tingkatkan Kepercayaan Diri Belanja Online
                 </h3>
                 <p className="text-gray-600">
-                  Kami memahami kebutuhan dan preferensi fashion orang
-                  Indonesia.
+                  Ucapkan selamat tinggal pada keraguan saat belanja online! FYUSE memungkinkanmu melihat bagaimana pakaian terlihat di tubuhmu secara virtual, sehingga kamu bisa membuat keputusan pembelian yang lebih percaya diri
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <h3 className="text-xl font-bold mb-2">
-                  Terintegrasi dengan Shopee
+                  Hemat Waktu dan Tenaga
                 </h3>
                 <p className="text-gray-600">
-                  Belanja mudah di platform e-commerce favorit Indonesia.
+                  Tidak perlu lagi repot pergi ke toko dan mengantri di ruang ganti. FYUSE memungkinkanmu mencoba pakaian kapan saja dan di mana saja, langsung dari smartphone-mu!
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <h3 className="text-xl font-bold mb-2">Dukungan Lokal</h3>
+                <h3 className="text-xl font-bold mb-2">Pengalaman Belanja yang Lebih Menyenangkan</h3>
                 <p className="text-gray-600">
-                  Tim dukungan pelanggan berbahasa Indonesia siap membantu Anda.
+                  FYUSE mengubah pengalaman belanja online menjadi lebih interaktif, menyenangkan, dan bebas stres. Temukan gaya terbaikmu dengan cara yang lebih mudah dan efisien!
                 </p>
               </div>
             </div>
